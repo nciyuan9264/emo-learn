@@ -1,0 +1,36 @@
+{
+  "$schema": "https://sf-unpkg-src.bytedance.net/@ies/eden-monorepo@3.5.0/lib/monorepo.schema.json",
+  "config": {
+    "strictNodeModules": true,
+    "infraDir": "infra",
+    "pnpmVersion": "7.33.7",
+    "edenMonoVersion": "3.5.0",
+    "scriptName": {
+      "test": ["test"],
+      "build": ["build"],
+      "start": ["build:watch", "dev", "start", "serve"]
+    }
+  },
+  "packages": [
+    {
+      "path": "packages/config",
+      "shouldPublish": false
+    },
+    {
+      "path": "apps/emo_learn_pc",
+      "shouldPublish": false
+    },
+    {
+      "path": "apps/emo_learn_app",
+      "shouldPublish": false
+    },
+    {
+      "path": "libs/components",
+      "shouldPublish": true
+    },
+    {
+      "path": "packages/util",
+      "shouldPublish": true
+    }
+  ]
+}

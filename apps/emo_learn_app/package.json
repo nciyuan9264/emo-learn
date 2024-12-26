@@ -1,0 +1,32 @@
+{
+  "private": true,
+  "name": "emo_learn_app",
+  "version": "1.0.0",
+  "description": "my awesome PIA project",
+  "main": "index.js",
+  "scripts": {
+    "dev": "pia dev",
+    "build": "pia build",
+    "analyze": "pia analyze"
+  },
+  "devDependencies": {
+    "@byted-emo/config": "workspace:*",
+    "@byted/eslint-config-standard": "^3.1.1",
+    "@byted/eslint-config-standard-react": "^2.1.1",
+    "@byted/eslint-config-standard-ts": "^3.1.1",
+    "@types/node": "18.6.2",
+    "@types/react": "~18.2.0",
+    "@types/react-dom": "~18.2.0",
+    "typescript": "5.3.2",
+    "eslint-plugin-prettier": "~4.2.1"
+  },
+  "dependencies": {
+    "@emo-learn/components": "workspace:^0.1.0",
+    "@emo-test/util": "workspace:^0.1.0",
+    "@piajs/hooks": "2.32.4",
+    "@piajs/kit": "2.32.4",
+    "@piajs/snapshot": "2.32.4",
+    "react": "~18.2.0",
+    "react-dom": "~18.2.0"
+  }
+}
